@@ -1,0 +1,90 @@
+#mainCalcDiv {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  min-width: 250px;
+  border: 1px solid black;
+}
+
+.childContainerDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}
+
+.childCalcDiv {
+  display: flex;
+  flex-grow: 1;
+}
+
+button {
+  height: 20px;
+  flex-grow: 1;
+  font-size: 9px;
+  color: black;
+  font-weight: bold;
+  padding: 0px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 1px;
+  margin-right: 1px;
+  border: 1px solid black;
+}
+
+#button1 {
+  background: #9999;
+}
+
+#button2 {
+  background: #9999;
+}
+
+#button3 {
+  background: #9999;
+}
+
+#button4 {
+  background: #9999;
+}
+
+#button5 {
+  background: #9999;
+}
+
+#button6 {
+  background: #9999;
+}
+
+#button7 {
+  background: #9999;
+}
+
+#button8 {
+  background: #9999;
+}
+
+#button9 {
+  background: #9999;
+}
+
+#button0 {
+  background: #9999;
+}
+
+#buttonClear {
+  background: beige;
+}
+
+#buttonPlus {
+  background: beige;
+}
+
+p {
+  display: flex;
+  flex-grow: 1;
+  font-size: 10px;
+  padding-left: 3px;
+  height: 16px;
+  border: 1px solid blue;
+}
