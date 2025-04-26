@@ -49,6 +49,18 @@ button {
   background: beige;
 }
 
+#buttonMinus {
+  background: beige;
+}
+
+#buttonMultiply {
+  background: beige;
+}
+
+#buttonDivide {
+  background: beige;
+}
+
 p {
   display: flex;
   flex-grow: 1;

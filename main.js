@@ -52,6 +52,21 @@ equalsButton.addEventListener("click", (e) => {
     seconNumber = null;
     displaySeconNumber = "";
     displayMainNumber = mainNumber.toString();
+  } else if (calculation === "multiply") {
+    mainNumber = multiply(mainNumber, seconNumber);
+    seconNumber = null;
+    displaySeconNumber = "";
+    displayMainNumber = mainNumber.toString();
+  } else if (calculation === "subtract") {
+    mainNumber = subtract(mainNumber, seconNumber);
+    seconNumber = null;
+    displaySeconNumber = "";
+    displayMainNumber = mainNumber.toString();
+  } else if (calculation === "divide") {
+    mainNumber = divide(mainNumber, seconNumber);
+    seconNumber = null;
+    displaySeconNumber = "";
+    displayMainNumber = mainNumber.toString();
   }
 
   display.textContent = displayMainNumber.toString();
@@ -63,8 +78,131 @@ equalsButton.addEventListener("click", (e) => {
 additionButton = document.querySelector("#buttonPlus");
 
 additionButton.addEventListener("click", function () {
+  if (seconNumber !== null) {
+    if (calculation === "addition") {
+      mainNumber = add(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "multiply") {
+      mainNumber = multiply(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "subtract") {
+      mainNumber = subtract(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "divide") {
+      mainNumber = divide(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    }
+  }
+
   calculation = "addition";
   displayCalculation = " + ";
+  display.textContent = mainNumber
+    .toString()
+    .concat(displayCalculation, displaySeconNumber);
+});
+
+subtractButton = document.querySelector("#buttonMinus");
+
+subtractButton.addEventListener("click", function () {
+  if (seconNumber !== null) {
+    if (calculation === "addition") {
+      mainNumber = add(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "multiply") {
+      mainNumber = multiply(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "subtract") {
+      mainNumber = subtract(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "divide") {
+      mainNumber = divide(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    }
+  }
+  calculation = "subtract";
+  displayCalculation = " - ";
+  display.textContent = mainNumber
+    .toString()
+    .concat(displayCalculation, displaySeconNumber);
+});
+
+multiplyButton = document.querySelector("#buttonMultiply");
+
+multiplyButton.addEventListener("click", function () {
+  if (seconNumber !== null) {
+    if (calculation === "addition") {
+      mainNumber = add(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "multiply") {
+      mainNumber = multiply(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "subtract") {
+      mainNumber = subtract(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "divide") {
+      mainNumber = divide(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    }
+  }
+  calculation = "multiply";
+  displayCalculation = " * ";
+  display.textContent = mainNumber
+    .toString()
+    .concat(displayCalculation, displaySeconNumber);
+});
+
+divideButton = document.querySelector("#buttonDivide");
+
+divideButton.addEventListener("click", function () {
+  if (seconNumber !== null) {
+    if (calculation === "addition") {
+      mainNumber = add(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "multiply") {
+      mainNumber = multiply(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "subtract") {
+      mainNumber = subtract(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    } else if (calculation === "divide") {
+      mainNumber = divide(mainNumber, seconNumber);
+      seconNumber = null;
+      displaySeconNumber = "";
+      displayMainNumber = mainNumber.toString();
+    }
+  }
+  calculation = "divide";
+  displayCalculation = " / ";
   display.textContent = mainNumber
     .toString()
     .concat(displayCalculation, displaySeconNumber);
@@ -81,8 +219,7 @@ numberButtons.forEach((button) => {
       } else {
         mainNumber = Number(mainNumber.toString().concat(e.target.textContent));
       }
-    } else if (calculation === "addition") {
-      displayCalculation = " + ";
+    } else {
       if (seconNumber == null) {
         seconNumber = Number(e.target.textContent);
       } else {
