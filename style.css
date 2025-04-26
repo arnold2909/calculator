@@ -32,47 +32,16 @@ button {
   border: 1px solid black;
 }
 
-#button1 {
-  background: #9999;
-}
-
-#button2 {
-  background: #9999;
-}
-
-#button3 {
-  background: #9999;
-}
-
-#button4 {
-  background: #9999;
-}
-
-#button5 {
-  background: #9999;
-}
-
-#button6 {
-  background: #9999;
-}
-
-#button7 {
-  background: #9999;
-}
-
-#button8 {
-  background: #9999;
-}
-
-#button9 {
-  background: #9999;
-}
-
-#button0 {
-  background: #9999;
+.buttonsNumber {
+  background: lightgray;
+  border-radius: 3px;
 }
 
 #buttonClear {
+  background: beige;
+}
+
+#buttonEquals {
   background: beige;
 }
 
