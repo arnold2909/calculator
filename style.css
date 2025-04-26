@@ -1,3 +1,7 @@
+div {
+  border-radius: 3px;
+}
+
 #mainCalcDiv {
   display: flex;
   flex-direction: column;
@@ -9,18 +13,12 @@
 
 .childContainerDiv {
   display: flex;
-  flex-direction: row;
-  margin: 2px;
-}
-
-.childCalcDiv {
-  display: flex;
-  flex-grow: 1;
+  margin: 1px;
 }
 
 button {
-  height: 20px;
-  flex-grow: 1;
+  height: 40px;
+  flex: 1 1 0px;
   font-size: 9px;
   color: black;
   font-weight: bold;
@@ -30,11 +28,11 @@ button {
   margin-left: 1px;
   margin-right: 1px;
   border: 1px solid black;
+  border-radius: 3px;
 }
 
 .buttonsNumber {
   background: lightgray;
-  border-radius: 3px;
 }
 
 #buttonClear {
